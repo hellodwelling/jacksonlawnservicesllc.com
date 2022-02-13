@@ -500,8 +500,19 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Landscape Design&#x27;, &#x27;href&#x27;: &#x27;gallery-Landscape-Design&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Hardscape&#x27;, &#x27;href&#x27;: &#x27;gallery-Hardscape&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Lawn Maintenance&#x27;, &#x27;href&#x27;: &#x27;gallery-Lawn-Maintenance&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Lawn Maintenance&#x27;, &#x27;href&#x27;: &#x27;gallery-Lawn-Maintenance&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Landscape Design&#x27;, &#x27;href&#x27;: &#x27;gallery-Landscape-Design&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Hardscape&#x27;, &#x27;href&#x27;: &#x27;gallery-Hardscape&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
+                                                    <a
+                                                        href=" gallery-Lawn-Maintenance "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Lawn Maintenance</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
                                                     <a
                                                         href=" gallery-Landscape-Design "
                                                         role="menuitem"
@@ -520,17 +531,6 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Hardscape</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-Lawn-Maintenance "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Lawn Maintenance</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -852,6 +852,12 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
+                                                <a href="gallery-Lawn-Maintenance" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Lawn Maintenance</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="gallery-Landscape-Design" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Landscape Design</p>
@@ -861,12 +867,6 @@
                                                 <a href="gallery-Hardscape" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Hardscape</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-Lawn-Maintenance" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Lawn Maintenance</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -897,24 +897,29 @@
                       
                     </div>
                     <!-- Bottom CTAs -->
-                    <div class="p-1 bg-gray-50">
-                        <a
-                            href="#"
-                            class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-secondary bg-gray-50 hover:bg-gray-100"
+                    <div class="d-none p-1 bg-primary sm:bg-gray-50">
+                        
+                            <button
+                            @click="contactModalOpen = true"
+                            class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary  hover:bg-gray-100"
                             >
-                            Send Us a Text
-                            <!-- text -->
-                            <!-- are these 2 correct? -->
-                            </a
-                        >
-                        <a
-                            href="#"
-                            class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-secondary bg-gray-50 hover:bg-gray-100"
-                            >
-                            
-                            <!-- none -->
-                            </a
-                        >
+                                Send us a Text
+                            </button>
+                        
+                        
+                            <a
+                                target = "_blank" 
+                                href="tel:(314) 277-8491"
+                                :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
+                                >
+                                Give us a Call
+                            </a>
+                         
+                     
+                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1059,6 +1064,15 @@
             
                 
             
+            <div class="inline-flex w-full ml-3 sm:w-auto">
+                <a
+                    href="https://clienthub.getjobber.com/client_hubs/a802e8f4-0f1d-4657-b766-dc01466bfcb5/public/work_request/new"
+                    class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  sm:py-4 sm:px-10 hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto text-primary border-primary"
+                >
+                    Book Now
+                </a>
+            </div>
+            
 <!--             
             <div class="w-full sm:w-auto">
                 <button
@@ -1091,7 +1105,11 @@
                 <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VWQPG4ECNNTO1ARTULP8EZPGVMZXTP7IR5X48GK7.jpeg" alt="" />
                 
                 <p class="text-base text-gray-500">
-                    Expert Landscaping & Hardscaping service in St Louis and surrounding areas. We provide professional service and offer free quotes. Reach out today to learn how we can help.
+                    Jackson Lawn Services LLC<br/>
+                     
+                        Florissant , MO <br/>
+                    
+                    (314) 277-8491
                     <!-- Is this supposed to be here and correct?  -->
                     <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
                 </p>
@@ -1283,16 +1301,8 @@
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <!-- Locations Links -->
                     <div>
-                        <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">Locations</h3>
+                        <h3 class="text-sm font-semibold tracking-wider text-gray-400 uppercase">Service Areas</h3>
                         <ul role="list" class="mt-4 -mx-1 space-y-4">
-                            
-                            <li>
-                                <a
-                                    href="#"
-                                    class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >St Louis , MO</a
-                                >
-                            </li>
                             
                             <li>
                                 <a
@@ -1315,6 +1325,14 @@
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
                                     >Brentwood , MO</a
+                                >
+                            </li>
+                            
+                            <li>
+                                <a
+                                    href="#"
+                                    class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
+                                    >St Louis , MO</a
                                 >
                             </li>
                             
@@ -1353,7 +1371,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Monday: 8:00am - 6:00pm</a
+                                    >Sun: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -1361,7 +1379,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Tuesday: 0:00am - 0:00am</a
+                                    >Mon: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -1369,7 +1387,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Wednesday: 0:00am - 0:00am</a
+                                    >Tues: 0:00am - 0:00am</a
                                 >
                             </li>
                             
@@ -1377,7 +1395,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Thursday: 8:00am - 6:00pm</a
+                                    >Wed: 0:00am - 0:00am</a
                                 >
                             </li>
                             
@@ -1385,7 +1403,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Friday: 8:00am - 6:00pm</a
+                                    >Thu: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -1393,7 +1411,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Saturday: 8:00am - 6:00pm</a
+                                    >Fri: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -1401,7 +1419,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Sunday: 8:00am - 6:00pm</a
+                                    >Sat: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -1592,112 +1610,112 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115252"
-                                            name="115252"
+                                            id="contact-service-117175"
+                                            name="117175"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115252" class="ml-3 text-sm font-medium text-gray-700">Yard cleanups</label>
+                                        <label for="contact-label-service-117175" class="ml-3 text-sm font-medium text-gray-700">Yard cleanups</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115253"
-                                            name="115253"
+                                            id="contact-service-117176"
+                                            name="117176"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115253" class="ml-3 text-sm font-medium text-gray-700">Hauling and dumping</label>
+                                        <label for="contact-label-service-117176" class="ml-3 text-sm font-medium text-gray-700">Hauling and dumping</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115254"
-                                            name="115254"
+                                            id="contact-service-117177"
+                                            name="117177"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115254" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                        <label for="contact-label-service-117177" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115255"
-                                            name="115255"
+                                            id="contact-service-117178"
+                                            name="117178"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115255" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                        <label for="contact-label-service-117178" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115256"
-                                            name="115256"
+                                            id="contact-service-117179"
+                                            name="117179"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115256" class="ml-3 text-sm font-medium text-gray-700">Hedge Trimming</label>
+                                        <label for="contact-label-service-117179" class="ml-3 text-sm font-medium text-gray-700">Hedge Trimming</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115257"
-                                            name="115257"
+                                            id="contact-service-117180"
+                                            name="117180"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115257" class="ml-3 text-sm font-medium text-gray-700">Sod Layouts</label>
+                                        <label for="contact-label-service-117180" class="ml-3 text-sm font-medium text-gray-700">Sod Layouts</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115258"
-                                            name="115258"
+                                            id="contact-service-117181"
+                                            name="117181"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115258" class="ml-3 text-sm font-medium text-gray-700">Fertilization</label>
+                                        <label for="contact-label-service-117181" class="ml-3 text-sm font-medium text-gray-700">Fertilization</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115259"
-                                            name="115259"
+                                            id="contact-service-117182"
+                                            name="117182"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115259" class="ml-3 text-sm font-medium text-gray-700">Lawn Aeration</label>
+                                        <label for="contact-label-service-117182" class="ml-3 text-sm font-medium text-gray-700">Lawn Aeration</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115260"
-                                            name="115260"
+                                            id="contact-service-117183"
+                                            name="117183"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115260" class="ml-3 text-sm font-medium text-gray-700">Weed Control</label>
+                                        <label for="contact-label-service-117183" class="ml-3 text-sm font-medium text-gray-700">Weed Control</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115261"
-                                            name="115261"
+                                            id="contact-service-117184"
+                                            name="117184"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115261" class="ml-3 text-sm font-medium text-gray-700">Hardscape Design & Construction</label>
+                                        <label for="contact-label-service-117184" class="ml-3 text-sm font-medium text-gray-700">Hardscape Design & Construction</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-115262"
-                                            name="115262"
+                                            id="contact-service-117185"
+                                            name="117185"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-115262" class="ml-3 text-sm font-medium text-gray-700">Landscape Designing</label>
+                                        <label for="contact-label-service-117185" class="ml-3 text-sm font-medium text-gray-700">Landscape Designing</label>
                                     </div>
                                 
                             </div>
