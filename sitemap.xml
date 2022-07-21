@@ -32,13 +32,6 @@
     </url>
 
     <url>
-        <loc>https://jacksonlawnservicesllc.com/gallery-Lawn-Maintenance</loc>
-        <lastmod>2022-07-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://jacksonlawnservicesllc.com/gallery-Landscaping</loc>
         <lastmod>2022-07-20</lastmod>
         <changefreq>weekly</changefreq>
@@ -46,7 +39,21 @@
     </url>
 
     <url>
+        <loc>https://jacksonlawnservicesllc.com/gallery-Lawn-Maintenance</loc>
+        <lastmod>2022-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
         <loc>https://jacksonlawnservicesllc.com/service-Leaf-Removal-</loc>
+        <lastmod>2022-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://jacksonlawnservicesllc.com/service-Retaining-walls-</loc>
         <lastmod>2022-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -67,28 +74,14 @@
     </url>
 
     <url>
-        <loc>https://jacksonlawnservicesllc.com/service-Sod-Layouts</loc>
-        <lastmod>2022-07-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://jacksonlawnservicesllc.com/service-Weed-Control</loc>
-        <lastmod>2022-07-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://jacksonlawnservicesllc.com/service-Retaining-walls-</loc>
-        <lastmod>2022-07-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://jacksonlawnservicesllc.com/service-Hedge-Trimming</loc>
+        <lastmod>2022-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://jacksonlawnservicesllc.com/service-Sod-Layouts</loc>
         <lastmod>2022-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -103,6 +96,13 @@
 
     <url>
         <loc>https://jacksonlawnservicesllc.com/service-Lawn-Aeration</loc>
+        <lastmod>2022-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://jacksonlawnservicesllc.com/service-Weed-Control</loc>
         <lastmod>2022-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
